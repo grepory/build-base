@@ -12,6 +12,3 @@ RUN apk add --update openssl bash git build-base m4 autoconf automake libtool &&
 
 VOLUME /build
 
-COPY build.sh /build.sh
-
-CMD ["/build.sh"]
