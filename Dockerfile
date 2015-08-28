@@ -10,7 +10,7 @@ ENV JAVA_VERSION=8 \
     JAVA_HOME=/usr/lib/jvm/default-jvm
 
 
-RUN apk add --update openssl bash git build-base m4 autoconf automake libtool ca-certificates wget && \
+RUN apk add --update openssl bash git build-base m4 autoconf automake libtool ca-certificates wget postgresql-client && \
 	wget https://github.com/google/protobuf/archive/v3.0.0-alpha-3.tar.gz && \
     tar -xzf v3.0.0-alpha-3.tar.gz && \
     cd protobuf-3.0.0-alpha-3 && \
